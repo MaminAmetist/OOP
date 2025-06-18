@@ -11,7 +11,4 @@ def generate_fibonacci(n):
         a, b = b, a + b
 
 
-gnrtr = generate_fibonacci(10)
-print(gnrtr)
-for elem in gnrtr:
-    print(elem)
+print(list(generate_fibonacci(10)))
