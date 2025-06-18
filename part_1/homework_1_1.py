@@ -10,7 +10,6 @@ def generate_even(n):
             yield elem
 
 
-gnrtr = generate_even(10)
-print(gnrtr)
-for elem in gnrtr:
+print(generate_even(10))
+for elem in generate_even(10):
     print(elem)
