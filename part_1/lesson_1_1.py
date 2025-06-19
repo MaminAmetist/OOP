@@ -6,7 +6,7 @@
 ✔ Решение в одну строку.
 """
 
-even_generate = (elem for elem in range(0, 101) if elem % 2 == 0)
+even_generate = (elem for elem in range(0, 101, 2) if sum([int(el) for el in str(elem)]) != 8)
 
 print(even_generate)
 for elem in even_generate:
