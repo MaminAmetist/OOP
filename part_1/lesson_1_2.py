@@ -10,7 +10,7 @@
 ✔ *Превратите решение в генераторное выражение.
 """
 
-fizz_buzz_generate = ('FizzBuzz' if elem % 3 == 0 and elem % 5 == 0
+fizz_buzz_generate = ('FizzBuzz' if elem % 15 == 0
                     else 'Fizz' if elem % 3 == 0
                     else 'Buzz' if elem % 5 == 0
                     else elem for elem in range(1, 101))
