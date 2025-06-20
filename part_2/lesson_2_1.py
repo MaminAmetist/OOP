@@ -29,7 +29,7 @@ print(func_1(n))
 
 
 def func_rec(n):
-    if n == 0:
+    if n // 10 == 0:
         return n
     return n % 10 + func_rec(n // 10)
 
