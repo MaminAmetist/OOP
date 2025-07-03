@@ -19,11 +19,12 @@ length (длина в метрах), width (ширина в метрах).
 
 
 class Road:
-    def __init__(self, length, width, density=25, thickness=0.05):
+    density = 25
+    thickness = 0.5
+
+    def __init__(self, length, width):
         self._length = length
         self._width = width
-        self.density = density
-        self.thickness = thickness
 
     def weight(self):
         return f'Масса полотна {(self._length * self._width * self.density * self.thickness) / 1000} тонн'
@@ -31,5 +32,4 @@ class Road:
 
 road_111 = Road(20, 5000)
 print(road_111.weight())
-road_123 = Road(10, 15000, 30, 0.1)
-print(road_123.weight())
+
