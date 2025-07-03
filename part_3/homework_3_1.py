@@ -19,14 +19,13 @@ from time import sleep
 
 
 class TrafficLight:
-    def __init__(self, color=None):
-        self.__color = color
+    __light_dict = {'red': 7, 'yellow': 2, 'green': 4}
 
-    def running(self):
-        light_dict = {'red': 7, 'yellow': 2, 'green': 4}
-        for key, value in light_dict.items():
-            self.__color = key
-            print(self.__color)
+    @staticmethod
+    def running():
+        for key, value in TrafficLight.__light_dict.items():
+            __color = key
+            print(__color)
             sleep(value)
 
 
